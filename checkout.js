@@ -48,6 +48,7 @@
     const o = livro[tipo];
     pedido = { livro, tipo, oferta: o, rotulo: tipo === "fisico" ? "Livro impresso" : "E-book" };
     const imp = tipo === "fisico";
+    if (o.pedido) return abrirPedidoGratis(livro);
     dlg.innerHTML = `
       <form class="ck" method="dialog" novalidate>
         <button type="button" class="ck-fechar" aria-label="Fechar">×</button>
@@ -109,6 +110,47 @@
       if (!f.reportValidity()) return;
       pedido.dados = Object.fromEntries(new FormData(f));
       pedido.dados.forma === "pix" ? passoPix() : passoCartao();
+    });
+    dlg.showModal();
+  }
+
+  /* ---------- e-book gratuito enviado sob pedido ---------- */
+  function abrirPedidoGratis(livro) {
+    dlg.innerHTML = `
+      <form class="ck" method="dialog" novalidate>
+        <button type="button" class="ck-fechar" aria-label="Fechar">×</button>
+        <p class="sobretitulo">E-book gratuito</p>
+        <h2>${esc(livro.titulo)}</h2>
+        <p class="ck-nota">Preencha seus dados e envie o pedido. O e-book (PDF) chega no seu e-mail, sem custo.</p>
+        <fieldset>
+          <legend>Seus dados</legend>
+          <label class="ck-l">Nome completo<input name="nome" required autocomplete="name"></label>
+          <div class="ck-2">
+            <label class="ck-l">E-mail<input name="email" type="email" required autocomplete="email"></label>
+            <label class="ck-l">WhatsApp <i>(opcional)</i><input name="fone" type="tel" autocomplete="tel" placeholder="(45) 99999-9999"></label>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn cheio">Enviar pedido pelo ${canal}</button>
+      </form>`;
+    dlg.querySelector(".ck-fechar").onclick = () => dlg.close();
+    const f = dlg.querySelector("form");
+    f.addEventListener("submit", (ev) => {
+      ev.preventDefault();
+      if (!f.reportValidity()) return;
+      const d = Object.fromEntries(new FormData(f));
+      const texto = [`*Pedido de e-book gratuito pelo site*`, `Livro: ${livro.titulo}`, ``, `Nome: ${d.nome}`, `E-mail: ${d.email}`]
+        .concat(d.fone ? [`WhatsApp: ${d.fone}`] : []).join("\n");
+      enviarPedido(texto, `Pedido de e-book: ${livro.titulo}`);
+      dlg.innerHTML = `
+        <div class="ck ck-fim">
+          <button type="button" class="ck-fechar" aria-label="Fechar">×</button>
+          <p class="sobretitulo">Pedido enviado</p>
+          <h2>Obrigado, ${esc(d.nome.split(" ")[0])}!</h2>
+          <p>O e-book será enviado para <b>${esc(d.email)}</b>.</p>
+          <button type="button" class="btn cheio" id="ck-ok">Fechar</button>
+        </div>`;
+      dlg.querySelector(".ck-fechar").onclick = () => dlg.close();
+      dlg.querySelector("#ck-ok").onclick = () => dlg.close();
     });
     dlg.showModal();
   }

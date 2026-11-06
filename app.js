@@ -86,7 +86,7 @@
     const proprio = (o) => o && !o.externo && !o.gratis && o.preco > 0;
     const oferta = (tipo, o, rotulo, botao) => o ? `<div class="oferta"><span class="tipo">${rotulo}</span>
         <span class="preco">${o.preco ? brl(o.preco) : "Gratuito"}</span><span class="det">${esc(o.detalhes || "")}</span>
-        ${proprio(o)
+        ${proprio(o) || o.pedido
           ? `<button type="button" class="btn cheio" data-comprar="${tipo}" data-livro="${esc(l.id)}">${esc(o.botao || botao)}</button>`
           : `<a class="btn cheio" href="${esc(o.link)}" target="_blank" rel="noopener">${esc(o.botao || botao)}</a>`}</div>` : "";
     const pagto = [
@@ -95,7 +95,8 @@
           ? "Pague com Pix (QR Code na própria página) ou cartão de crédito pelo Mercado Pago."
           : "Pagamento por Pix, com QR Code e copia e cola na própria página."),
       proprio(l.digital) && "O e-book chega no seu e-mail logo após a confirmação.",
-      l.digital && l.digital.gratis && "Download livre, sem cadastro. Se puder, compartilhe com quem se interessa pelo tema.",
+      l.digital && l.digital.pedido && "E-book gratuito: preencha seu nome e e-mail, envie o pedido e o arquivo chega no seu e-mail.",
+      l.digital && l.digital.gratis && !l.digital.pedido && "Download livre, sem cadastro. Se puder, compartilhe com quem se interessa pelo tema.",
       l.editoraLink && `Mais informações no <a href="${esc(l.editoraLink)}" target="_blank" rel="noopener">site da ${esc(l.editora || "editora")}</a>.`
     ].filter(Boolean).join(" ");
 

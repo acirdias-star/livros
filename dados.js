@@ -47,8 +47,8 @@ window.SITE = {
       chamada: "Quinze pessoas viveram nas ruas. Quinze vezes o mundo desviou o olhar e os ouvidos.",
       sinopse: "Há uma cena que se repete nas grandes cidades: alguém estendido na calçada, e a multidão passando sem parar. O invisível não é quem não existe — é quem existe demais para ser suportado. Escritas dos Invisíveis nasce de uma decisão contrária: parar, sentar, ouvir.\n\nEntre 2024 e 2025, o pesquisador Acir Dias da Silva percorreu as ruas de São Paulo e Cascavel, chegou até a Missão Belém e à Paróquia São Miguel Arcanjo, e sentou-se diante de quinze pessoas em situação de rua. Não para estudá-las. Para escutá-las. O resultado são quinze biografias literárias — cada uma com nome, voz, memória e ferida próprios.\n\nHá o ex-circense que passou pela Cracolândia e encontrou uma missão. Há a mulher trans que sobreviveu ao que a maioria não sobrevive. Há o tatuado que pediu para não ser nomeado, e cujo silêncio também fala. Há Padre Gilson, in memoriam, que foi morador de rua antes de se tornar o padre dos moradores de rua. Estas páginas não oferecem consolo fácil nem denúncia panfletária. Oferecem algo mais raro: presença.",
       trecho: "Não relatórios, não estatísticas, mas vidas. Escritas dos Invisíveis é o que acontece quando a literatura se recusa a passar por cima.",
-      fisico: { preco: 69.9, link: "https://mpago.la/SEU-LINK", detalhes: "Brochura com orelhas · Pedro & João Editores" },
-      digital: { preco: 29.9, link: "https://go.hotmart.com/SEU-LINK", detalhes: "E-book em PDF e ePub" }
+      fisico: null,
+      digital: { preco: 0, gratis: true, pedido: true, botao: "Faça seu pedido e receba o e-book", detalhes: "E-book gratuito · enviado para o seu e-mail" }
     },
     {
       id: "intermidialidade-dos-invisiveis",
@@ -62,8 +62,8 @@ window.SITE = {
       chamada: "As representações artísticas e midiáticas humanizam ou reforçam estereótipos?",
       sinopse: "Reflexão analítica e crítica sobre como vemos a população de rua. O livro investiga as camadas de mediação que constroem a percepção pública sobre esses indivíduos, analisando obras do cinema, da literatura, da pintura e a cobertura jornalística.\n\nAo confrontar a realidade documental do Volume I com as narrativas ficcionais e jornalísticas, Intermidialidade dos Invisíveis disseca os mecanismos intelectuais e estéticos da invisibilidade social.",
       trecho: "",
-      fisico: { preco: 69.9, link: "https://mpago.la/SEU-LINK", detalhes: "Brochura com orelhas · Pedro & João Editores" },
-      digital: { preco: 29.9, link: "https://go.hotmart.com/SEU-LINK", detalhes: "E-book em PDF e ePub" }
+      fisico: null,
+      digital: { preco: 0, gratis: true, pedido: true, botao: "Faça seu pedido e receba o e-book", detalhes: "E-book gratuito · enviado para o seu e-mail" }
     },
     {
       id: "casa-nazare",
@@ -132,7 +132,7 @@ window.SITE = {
       chamada: "Uma era em que olhar é também resistir.",
       sinopse: "Em Arte em Trânsito: Traduções Intermidiáticas no Cinema e na Pintura, o professor e pesquisador Acir Dias nos conduz por uma travessia estética e conceitual que entrelaça pintura e cinema como formas de linguagem que se desdobram, se traduzem e se recriam mutuamente. A partir da intermidialidade, entendida não como simples sobreposição de mídias, mas como espaço fértil de convergência simbólica, o autor delineia um campo em que a imagem se torna ponte entre o visível e o invisível, entre o passado e o presente, entre o efêmero e o eterno.\n\nCada capítulo opera como uma moldura em expansão: reconfigura gêneros, desafia fronteiras disciplinares e mergulha na complexidade das formas visuais na hipermodernidade — tempo de velocidade, fragmentação e excesso de estímulos. Amparado por autores como Walter Benjamin, Georges Didi-Huberman e Gilles Lipovetsky, Acir Dias reflete sobre o lugar da arte em um mundo em constante deslocamento, no qual a memória e a sensibilidade se tornam territórios de resistência.\n\nDe Bruegel a Van Gogh, de Sokurov a Béla Tarr, do rosto em close-up à paisagem pictórica em movimento, o livro investiga como a imagem cinematográfica pode se tornar pintura e como a pintura pode se tornar tempo — narração, silêncio, alegoria, presença. Arte em Trânsito não é apenas um livro sobre arte. É uma convocação para sentir e pensar com as imagens.",
       trecho: "",
-      fisico: { preco: 89.9, link: "https://mpago.la/SEU-LINK", detalhes: "552 páginas · exemplar vendido e enviado pelo autor" }, // PREÇO DE TESTE
+      fisico: null,
       digital: { preco: 0, externo: true, botao: "Ler grátis na editora", link: "https://ponteseditores.com.br/loja3/loja/arte-em-transito-traducoes-intermidiaticas-no-cinema-e-na-pintura-acir-dias/", detalhes: "E-book de acesso gratuito · ISBN 978-85-217-0680-9" }
     },
     {
@@ -150,8 +150,8 @@ window.SITE = {
       chamada: "Cada ruptura facilita novas convergências.",
       sinopse: "InterMidialidade, InterLiteraturas, InterArtes: convergências e rupturas na hipermodernidade propõe uma análise das interações multifacetadas entre literatura, artes e mídias na era digital. Em um contexto de rápida evolução tecnológica e globalização, o livro provoca reflexões sobre a influência dessas dinâmicas nas narrativas culturais contemporâneas, investigando as novas formas de expressão que emergem à medida que as fronteiras entre gêneros, mídias e culturas se tornam mais fluidas.\n\nA obra examina tanto os efeitos das transformações digitais quanto as tensões e os desafios que elas acarretam, incentivando o leitor a adotar uma postura crítica diante da maneira como a convergência midiática e a dispersão tecnológica redefinem criatividade, memória e identidade cultural.\n\nPara quem busca entender as dinâmicas da hipermodernidade, é um guia para navegar em um panorama cultural em contínua transformação, no qual cada ruptura facilita novas convergências e cada inovação contém o potencial para futuras mudanças.",
       trecho: "",
-      fisico: { preco: 56, link: "https://mpago.la/SEU-LINK", detalhes: "16 × 23 cm · 145 páginas · exemplar vendido e enviado pelo autor" },
-      digital: null
+      fisico: null,
+      digital: { preco: 0, gratis: true, pedido: true, botao: "Faça seu pedido e receba o e-book", detalhes: "E-book gratuito · enviado para o seu e-mail" }
     },
 
     /* ---- Mercado de Letras ---- */
@@ -171,8 +171,8 @@ window.SITE = {
       chamada: "As raízes estéticas, políticas e culturais do cinema no presente fluido.",
       sinopse: "No cinema hipermoderno, é comum encontrar narrativas fluidas e de fluxo ou, por outro lado, narrativas quebradas, construídas com uso e abuso da tecnologia. Tais narrativas são baseadas nas raízes cinematográficas da Nouvelle Vague francesa, que procuram explorar e estimular emoções, temas, situações e personagens em uma descontinuidade. Assim, vão muito além do retrato convencional do personagem e da lógica na estrutura, no tempo e no espaço narrativo. Há uma clara deslegitimação da metanarrativa: um esforço em pensar o presente fluido como um momento absolutamente inédito na História e na narração.\n\nEm Cinema e Hipermodernidade, você encontra as raízes estéticas, políticas e culturais da expansão do consumo e da comunicação de massa; o enfraquecimento das normas autoritárias e disciplinares; o surto de individualização; a consagração do hedonismo e do psicologismo; a perda da fé no futuro revolucionário; o descontentamento com as paixões políticas e a transformação do palco das sociedades abastadas.\n\nEscrito em parceria com Maria Aparecida Rodrigues, professora do Programa de Pós-Graduação em Letras da PUC Goiás, ensaísta e crítica de arte.",
       trecho: "",
-      fisico: { preco: 68, link: "https://mpago.la/SEU-LINK", detalhes: "16 × 23 cm · 196 páginas · brochura · ISBN 978-65-86089-19-6" },
-      digital: null
+      fisico: null,
+      digital: { preco: 0, gratis: true, pedido: true, botao: "Faça seu pedido e receba o e-book", detalhes: "E-book gratuito · enviado para o seu e-mail" }
     },
     {
       id: "intersecoes-e-intermidias",
